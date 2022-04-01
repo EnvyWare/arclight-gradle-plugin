@@ -29,7 +29,7 @@ dependencies {
     embed 'org.cadixdev:lorenz:0.5.8'
 }
 
-java.toolchain.languageVersion = JavaLanguageVersion.of(16)
+java.toolchain.languageVersion = JavaLanguageVersion.of(8)
 
 jar {
     from(configurations.embed.collect { it.isDirectory() ? it : zipTree(it) })
