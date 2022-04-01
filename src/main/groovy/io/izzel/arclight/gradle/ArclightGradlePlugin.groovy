@@ -107,7 +107,7 @@ class ArclightGradlePlugin implements Plugin<Project> {
                 if (installerJar.parentFile != null) {
                     installerJar.parentFile.mkdirs()
                 }
-                def installerUrl = "https://files.minecraftforge.net/maven/net/minecraftforge/forge/${arclightExt.mcVersion}-${arclightExt.forgeVersion}/forge-${arclightExt.mcVersion}-${arclightExt.forgeVersion}-installer.jar"
+                def installerUrl = "https://maven.minecraftforge.net/net/minecraftforge/forge/${arclightExt.mcVersion}-${arclightExt.forgeVersion}/forge-${arclightExt.mcVersion}-${arclightExt.forgeVersion}-installer.jar"
                 Utils.download(installerUrl, installerJar)
             }
             generateMeta.configure { Copy task ->
